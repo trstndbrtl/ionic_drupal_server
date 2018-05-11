@@ -1,0 +1,9 @@
+name: Ionic Drupal Api Server
+description: Provides an page ressource for Ionic Drupal Server.
+core: 8.x
+type: module
+dependencies:
+  - drupal:views
+  - drupal:node
+  - ionic_drupal_server
+package: MM

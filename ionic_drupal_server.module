@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ionic_drupal_server.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ionic_drupal_server_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ionic_drupal_server module.
+    case 'help.page.ionic_drupal_server':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A server drupal to populate Ionic App') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ionic_drupal_server_theme() {
+  return [
+    'ionic_drupal_server' => [
+      'render element' => 'children',
+    ],
+  ];
+}

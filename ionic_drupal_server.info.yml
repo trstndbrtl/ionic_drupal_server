@@ -1,0 +1,13 @@
+name: 'Ionic drupal server'
+type: module
+description: 'A server drupal to populate Ionic App'
+core: 8.x
+package: 'MM'
+dependencies:
+  - drupal:views
+  - drupal:node
+  - basic_auth
+  - serialization
+  - rest
+  - hal
+  - restui
