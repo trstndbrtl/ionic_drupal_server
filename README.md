@@ -35,6 +35,9 @@ cors.config:
  supportsCredentials: true
 ```
 >
+### Install module
+Install and active ionic_drupal_api_server in [nornal way](https://www.drupal.org/docs/8/extending-drupal-8/installing-drupal-8-modules#import_mod)
+>
 ### Access Api
 > 
 Database list
